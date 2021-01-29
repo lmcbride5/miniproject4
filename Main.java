@@ -4,8 +4,8 @@ class Main {
   public static void main(String[] args) {
     //create program w/ scanner to figure out birthday, how old, and create true/false statement about grade
 
-    System.out.println("What is your name?");
-      String name = scan.next(); 
+      Scanner scan =  new Scanner(System.in); 
+
     System.out.println("What is your birth month?"); 
      String birthMonth = scan.next();
     System.out.println("What day is your birthday?");
@@ -16,9 +16,10 @@ class Main {
       int currentYear = scan.nextInt(); 
     System.out.println("What grade are you in?"); 
       int gradeLevel = scan.nextInt(); 
+    System.out.println("Have you passed all your classes? (true/false)");
+      boolean passed = scan.nextBoolean(); 
 
     System.out.println("Your age is " + age); 
-    System.out.println("Your grade level is " + gradeLevel); 
     System.out.println("Your birthday is " + birthDay); 
   }
 
@@ -35,17 +36,14 @@ class Main {
         }
 
     //create method to calculate grade level
-      static int gradeYear(int gradeLevel) 
+      static boolean passed(boolean passed) 
         {
-          int gradeLevel = 9; 
-          int gradeLevel = 10;
-          int gradeLevel = 11;
-          int gradeLevel = 12; 
-    
-          if (i = gradeLevel)
-            {
-              System.out.println("You are in grade " + gradeLevel); 
-            }
+          if (passed = true)
+          {
+            System.out.println("You have passed all your classes!");
+          }else{
+            System.out.print("You have failed all your classes, please see your teacher for more info."); 
+          }
 
         }
   }
