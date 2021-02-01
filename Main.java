@@ -6,9 +6,9 @@ class Main {
 
       Scanner scan =  new Scanner(System.in); 
 
-    System.out.println("What is your birth month? example: 01/1/2004"); 
+    System.out.println("What is your birth month? just the numerical number"); 
       int birthMonth = scan.nextInt();
-    System.out.println("What day is your birthday? example: 01/1/2004");
+    System.out.println("What day is your birthday? just the numerical number");
       int birthDay = scan.nextInt(); 
     System.out.println("When is your birth year?");
       int birthYear = scan.nextInt();
@@ -16,7 +16,7 @@ class Main {
       int currentYear = scan.nextInt(); 
 
     System.out.println("Your age is " + age(birthYear,currentYear)); 
-    System.out.println("Your birthday is " + birthDay); 
+    System.out.println("Your birthday is " + birthMonth + " / " + birthDay + " / "  + birthYear); 
     System.out.println("Your zodiac sign is " + zodiacSign(birthMonth, birthDay)); 
   }
 
@@ -24,43 +24,43 @@ class Main {
       static String  zodiacSign(int birthMonth, int birthDay)
         {
         //if statement to print January Aquarius
-          if (birthMonth == 01 && birthDay >= 1 && birthDay <= 19)
+          if (birthMonth == 1 && birthDay >= 1 && birthDay <= 19)
           {
              return "Capricorn"; 
           }
 
         //if statement to print January Aquarius
-          if (birthMonth == 01 && birthDay >= 20 && birthDay <= 31)
+          if (birthMonth == 1 && birthDay >= 20 && birthDay <= 31)
           {
             return "Aquarius";
           }
 
         //if statement to print February Aquarius
-          if (birthMonth == 02 && birthDay >=  1 && birthDay <= 18)
+          if (birthMonth == 2 && birthDay >=  1 && birthDay <= 18)
           {
             return "Aquarius"; 
           }
 
         //if statement to print February Pisces
-          if (birthMonth == 02 && birthDay >= 19 && birthDay <= 28) 
+          if (birthMonth == 2 && birthDay >= 19 && birthDay <= 28) 
           {
             return "Pisces";
           }
 
         //if statement to print March Pisces
-          if (birthMonth == 03 && birthDay >= 1 && birthDay <= 20)
+          if (birthMonth == 3 && birthDay >= 1 && birthDay <= 20)
           {
             return "Pisces";
           }
 
         //if statement to print March Aries
-          if (birthMonth == 03 && birthDay >= 21 && birthDay <= 31)
+          if (birthMonth == 3 && birthDay >= 21 && birthDay <= 31)
           {
             return "Aries";
           }
 
         //if statement to print April Aries
-          if (birthMonth == 04 && birthDay >= 1 && birthDay <= 19)
+          if (birthMonth == 4 && birthDay >= 1 && birthDay <= 19)
           {
             return "Aries"; 
           }
@@ -72,37 +72,37 @@ class Main {
           }
 
         //if statement to print May Taurus
-          if (birthMonth == 05 && birthDay >= 1 && birthDay <= 20)
+          if (birthMonth == 5 && birthDay >= 1 && birthDay <= 20)
           {
             return "Taurus"; 
           }
 
         //if statement to print May Gemini
-          if (birthMonth == 05 && birthDay >= 21 && birthDay <= 31)
+          if (birthMonth == 5 && birthDay >= 21 && birthDay <= 31)
           {
             return "Gemini";
           }
 
         //if statement to print June Gemini
-          if (birthMonth == 06 && birthDay >= 1 && birthDay <= 21)
+          if (birthMonth == 6 && birthDay >= 1 && birthDay <= 21)
           {
             return "Gemini"; 
           }
 
         //if statement to print June Cancer
-          if (birthMonth == 06 && birthDay >= 22 && birthDay <= 30)
+          if (birthMonth == 6 && birthDay >= 22 && birthDay <= 30)
           {
             return "Cancer"; 
           }
 
         //if statement to print July Cancer
-          if (birthMonth == 07 && birthDay >= 1 && birthDay <= 22)
+          if (birthMonth == 7 && birthDay >= 1 && birthDay <= 22)
           {
             return "Cancer"; 
           }
 
         //if statement to print July Leo
-          if (birthMonth == 07 && birthDay >= 23 && birthDay <= 31)
+          if (birthMonth == 7 && birthDay >= 23 && birthDay <= 31)
           {
             return "Leo"; 
           }
